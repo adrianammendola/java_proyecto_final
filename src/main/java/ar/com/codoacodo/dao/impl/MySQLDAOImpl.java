@@ -5,15 +5,12 @@ import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.ArrayList;
 
 import ar.com.codoacodo.db.AdministradorDeConexiones;
 import ar.com.codoacodo.oop.Articulo;
-import ar.com.codoacodo.oop.Libro;
 
 //cumplo el contrato
 public class MySQLDAOImpl implements DAO {
