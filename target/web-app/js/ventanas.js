@@ -13,12 +13,12 @@ const errorButton = document.getElementById("error-button")
         // Verifica si algún campo está vacío
         if (nombre === "" || precio === "" || codigo === "" || autor === "") {
             // Muestra el mensaje de error
-            document.getElementById("error-button").style.display = "block";
-            document.getElementById("success-button").style.display = "none";
+            swal("", "Articulo Creado", "error");
+            
         } else {
             // Muestra el mensaje de éxito
-            document.getElementById("success-button").style.display = "block";
-            document.getElementById("error-button").style.display = "none";
+            swal("", "Articulo Creado", "success");
+            getServletContext().getRequestDispatcher("/nuevo.jsp").forward(req, resp);
             
             
 

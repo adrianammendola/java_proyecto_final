@@ -40,8 +40,10 @@
             <div class="col-12">
                 <section>
                     <h1>Alta Articulo</h1>
-                    <form method="post" action="<%=request.getContextPath()%>/AltaArticuloController">
-                        <div class="mb-3">
+                    <form  method="post" action="<%=request.getContextPath()%>/AltaArticuloController">
+                      
+                      
+                      <div class="mb-3">
                             <label for="exampleFormControlInput1" 
                                 class="form-label">Nombre</label>
                             <input name="nombre" 
@@ -90,24 +92,32 @@
                                 type="text" 
                                 class="form-control" 
                                 id="autor" 
-                                maxlength="50"
-                                >
+                                maxlength="50">
                         </div>
-                        <button class="btn btn-primary" onclick="mostrar()" >
-                            Dar de alta
-                        </button>
-                        <div class="alert alert-success mt-3" role="alert" id="success-button" style="display: none;">
-                            Su registro fue creado con exito
+                        <% if (request.getAttribute("mensaje") != null) { %>
+                          <div class="alert alert-success" role="alert">
+                              <%= request.getAttribute("mensaje") %>
                           </div>
-                        <div class="alert alert-danger mt-3" role="alert" id="error-button" style="display: none;">
-                            Faltan completar campos
+                        <% } %>
+                        <%-- Fin del bloque de código JSP --%>
+                                      
+                                        
+                                          <button class="btn btn-primary">
+                                              Dar de alta
+                                          </button>
+                                      </form>
+                                  </section>
+                              </div>
                           </div>
+                      </div>     
                     </form>
                 </section>
             </div>
         </div>
 
-        <script src="./js/ventanas.js"></script>
+        
+        
+
 </body>
 
 </html>

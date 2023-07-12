@@ -1,65 +1,61 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="ar.com.codoacodo.AppTest" time="0.004" errors="0" skipped="0">
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="ar.com.codoacodo.AppTest" time="0.144" tests="1" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
-    <property name="java.vm.version" value="17.0.7+7-adhoc.admin.jdk17u"/>
-    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/openlogic-openjdk-17.jdk/Contents/Home/lib"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/usuario/Desktop/Cursos/Codo a Codo 2023/java_proyecto_final"/>
-    <property name="java.vm.vendor" value="OpenLogic"/>
-    <property name="java.vendor.url" value="https://openlogic.com/"/>
-    <property name="guice.disable.misplaced.annotation.check" value="true"/>
-    <property name="path.separator" value=":"/>
-    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="user.country" value="AR"/>
-    <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/usuario/Desktop/Cursos/Codo a Codo 2023/java_proyecto_final"/>
-    <property name="java.vm.compressedOopsMode" value="Zero based"/>
-    <property name="java.runtime.version" value="17.0.7+7-adhoc.admin.jdk17u"/>
-    <property name="os.arch" value="x86_64"/>
-    <property name="java.io.tmpdir" value="/var/folders/p5/wkv7p9n54v59j1yy5n8880sh0000gn/T/"/>
-    <property name="line.separator" value="
-"/>
-    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/Applications/apache-maven-3.6.3/bin/m2.conf"/>
-    <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/Users/usuario/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
-    <property name="maven.conf" value="/Applications/apache-maven-3.6.3/conf"/>
-    <property name="jdk.debug" value="release"/>
-    <property name="java.class.version" value="61.0"/>
-    <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="12.6.7"/>
-    <property name="library.jansi.path" value="/Applications/apache-maven-3.6.3/lib/jansi-native"/>
-    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="user.home" value="/Users/usuario"/>
-    <property name="user.timezone" value="America/Argentina/Buenos_Aires"/>
-    <property name="file.encoding" value="UTF-8"/>
     <property name="java.specification.version" value="17"/>
-    <property name="user.name" value="usuario"/>
-    <property name="java.class.path" value="/Applications/apache-maven-3.6.3/boot/plexus-classworlds-2.6.0.jar"/>
-    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="c:\Users\ammendola\Desktop\java\java_proyecto_final\target\test-classes;c:\Users\ammendola\Desktop\java\java_proyecto_final\target\classes;C:\Users\ammendola\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\ammendola\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\ammendola\.m2\repository\com\mysql\mysql-connector-j\8.0.31\mysql-connector-j-8.0.31.jar;C:\Users\ammendola\.m2\repository\com\google\protobuf\protobuf-java\3.19.4\protobuf-java-3.19.4.jar;C:\Users\ammendola\.m2\repository\jakarta\servlet\jakarta.servlet-api\5.0.0\jakarta.servlet-api-5.0.0.jar;C:\Users\ammendola\.m2\repository\javax\servlet\jsp\javax.servlet.jsp-api\2.3.3\javax.servlet.jsp-api-2.3.3.jar;"/>
+    <property name="java.vm.vendor" value="OpenLogic"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package -f /Users/usuario/Desktop/Cursos/Codo a Codo 2023/java_proyecto_final/pom.xml"/>
-    <property name="java.home" value="/Library/Java/JavaVirtualMachines/openlogic-openjdk-17.jdk/Contents/Home"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://openlogic.com/"/>
+    <property name="user.timezone" value="America/Buenos_Aires"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="AR"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\OpenLogic\jdk-17.0.6.10-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\ammendola\AppData\Local\Temp\surefire9963332650246627025\surefirebooter-20230712122636366_3.jar C:\Users\ammendola\AppData\Local\Temp\surefire9963332650246627025 2023-07-12T12-26-35_784-jvmRun1 surefire-20230712122636366_1tmp surefire_0-20230712122636366_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="c:\Users\ammendola\Desktop\java\java_proyecto_final\target\test-classes;c:\Users\ammendola\Desktop\java\java_proyecto_final\target\classes;C:\Users\ammendola\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\ammendola\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\ammendola\.m2\repository\com\mysql\mysql-connector-j\8.0.31\mysql-connector-j-8.0.31.jar;C:\Users\ammendola\.m2\repository\com\google\protobuf\protobuf-java\3.19.4\protobuf-java-3.19.4.jar;C:\Users\ammendola\.m2\repository\jakarta\servlet\jakarta.servlet-api\5.0.0\jakarta.servlet-api-5.0.0.jar;C:\Users\ammendola\.m2\repository\javax\servlet\jsp\javax.servlet.jsp-api\2.3.3\javax.servlet.jsp-api-2.3.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\ammendola"/>
     <property name="user.language" value="es"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.vm.info" value="mixed mode, sharing"/>
-    <property name="java.version" value="17.0.7"/>
-    <property name="native.encoding" value="UTF-8"/>
-    <property name="java.vendor" value="OpenLogic"/>
-    <property name="sun.stderr.encoding" value="UTF-8"/>
-    <property name="maven.home" value="/Applications/apache-maven-3.6.3"/>
-    <property name="file.separator" value="/"/>
-    <property name="java.version.date" value="2023-04-18"/>
-    <property name="java.vendor.url.bug" value="https://techsupport.roguewave.com/"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
-    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.version.date" value="2023-01-17"/>
+    <property name="java.home" value="C:\Program Files\OpenLogic\jdk-17.0.6.10-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="c:\Users\ammendola\Desktop\java\java_proyecto_final"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\ammendola\AppData\Local\Temp\surefire9963332650246627025\surefirebooter-20230712122636366_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.6+10-adhoc..jdk17u"/>
+    <property name="user.name" value="ammendola"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
     <property name="java.vendor.version" value="OpenLogic-OpenJDK"/>
-    <property name="sun.stdout.encoding" value="UTF-8"/>
-    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="localRepository" value="C:\Users\ammendola\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://techsupport.roguewave.com/"/>
+    <property name="java.io.tmpdir" value="C:\Users\AMMEND~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.6"/>
+    <property name="user.dir" value="c:\Users\ammendola\Desktop\java\java_proyecto_final"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\OpenLogic\jdk-17.0.6.10-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\OpenLogic\jdk-17.0.6.10-hotspot\bin;C:\Program Files\OpenLogic\jdk-17.0.7.7-hotspot\bin;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\php 8.2;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\apache-maven-3.9.3\bin;C:\Program Files\Git\cmd;C:\Users\ammendola\AppData\Local\Microsoft\WindowsApps;C:\Users\ammendola\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ammendola\AppData\Roaming\npm;C:\Users\ammendola\AppData\Roaming\Composer\vendor\bin;C:\Users\ammendola\AppData\Local\GitHubDesktop\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="OpenLogic"/>
+    <property name="java.vm.version" value="17.0.6+10-adhoc..jdk17u"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase classname="ar.com.codoacodo.AppTest" name="shouldAnswerWithTrue" time="0.004"/>
+  <testcase name="shouldAnswerWithTrue" classname="ar.com.codoacodo.AppTest" time="0.002"/>
 </testsuite>
