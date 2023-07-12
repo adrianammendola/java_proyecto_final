@@ -94,7 +94,7 @@ public class MySQLDAOImpl implements DAO {
             String codigo = res.getString(7);
             Double precio = res.getDouble(8);
 
-            listado.add(new Articulo(id, titulo, imagen, autor, 0, false, codigo, LocalDateTime.now()));
+            listado.add(new Articulo(id, titulo, imagen, autor, precio, false, codigo, LocalDateTime.now()));
         }
         return listado;
     }

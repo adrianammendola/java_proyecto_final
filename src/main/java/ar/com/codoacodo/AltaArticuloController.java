@@ -23,6 +23,7 @@ public class AltaArticuloController extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //CREATE CONTROLLER 
         System.out.println("AltaArticuloController");
+
         //tendria que tener los parametros del front (<form>)
         String titulo = req.getParameter("nombre");
         double precio = Double.parseDouble(req.getParameter("precio"));
@@ -40,7 +41,7 @@ public class AltaArticuloController extends HttpServlet {
         try {
             dao.create(nuevo);
             //redirect
-            //getServletContext().getRequestDispatcher("/ListadoArticuloController").forward(req, resp);//POST ListadoArticuloController
+            getServletContext().getRequestDispatcher("/ListadoArticuloController").forward(req, resp);//POST ListadoArticuloController
             resp.sendRedirect(req.getContextPath() + "/ListadoArticuloController");
         } catch (Exception e) {
             //redirect

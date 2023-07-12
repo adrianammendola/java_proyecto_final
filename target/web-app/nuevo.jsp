@@ -7,32 +7,34 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CaC23049</title>
+    <title>Proyecto Final JAVA 2023</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  
+          <img src="" alt="">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="nuevo.jsp">Nuevo</a>
+                <a class="nav-link active" aria-current="page" href="index.jsp">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="<%=request.getContextPath()%>/ListadoArticuloController">Listado</a>
-              </li>              
+                <a class="nav-link" href="nuevo.jsp">Nuevo Articulo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="<%=request.getContextPath()%>/ListadoArticuloController">Listado de Articulos</a>
+              </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
           </div>
         </div>
-      </nav>
+      </nav>            
+            
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -45,8 +47,8 @@
                             <input name="nombre" 
                                 type="text" 
                                 class="form-control" 
-                                id="exampleFormControlInput1"
-                                placeholder="Nombre"
+                                id="nombre"
+                                
                                 maxlength="50">
                         </div>
                         <div class="mb-3">
@@ -56,11 +58,13 @@
                             <input name="precio" 
                                 type="number" 
                                 class="form-control" 
-                                id="exampleFormControlTextarea1">
+                                id="precio"
+                                >
+                                
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlTextarea1" 
-                                class="form-label">Im&aacute;gen
+                                class="form-label">Imagen
                             </label>
                             <input name="imagen" 
                                 type="file" 
@@ -69,13 +73,14 @@
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlTextarea1" 
-                                class="form-label">C&oacute;digo
+                                class="form-label">Codigo
                             </label>
                             <input name="codigo" 
                                 type="text" 
                                 class="form-control" 
-                                id="exampleFormControlTextarea1" 
-                                maxlength="7">
+                                id="codigo" 
+                                maxlength="7"
+                                >
                         </div>
                         <div class="mb-3">
                             <label for="autor" 
@@ -85,15 +90,24 @@
                                 type="text" 
                                 class="form-control" 
                                 id="autor" 
-                                maxlength="50">
+                                maxlength="50"
+                                >
                         </div>
-                        <button class="btn btn-primary">
+                        <button class="btn btn-primary" onclick="mostrar()" >
                             Dar de alta
                         </button>
+                        <div class="alert alert-success mt-3" role="alert" id="success-button" style="display: none;">
+                            Su registro fue creado con exito
+                          </div>
+                        <div class="alert alert-danger mt-3" role="alert" id="error-button" style="display: none;">
+                            Faltan completar campos
+                          </div>
                     </form>
                 </section>
             </div>
         </div>
+
+        <script src="./js/ventanas.js"></script>
 </body>
 
 </html>

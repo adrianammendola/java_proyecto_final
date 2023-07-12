@@ -50,7 +50,7 @@
                           <tr>
                             <th scope="col">#</th>
                             <th scope="col">Título</th>
-                            <th scope="col">Código</th>
+                            <th scope="col">Codigo</th>
                             <th scope="col">Precio</th>
                             <th scope="col">Fecha</th>
                             <th scope="col">Acciones</th>
