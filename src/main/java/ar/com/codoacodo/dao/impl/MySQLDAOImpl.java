@@ -5,6 +5,7 @@ import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.ArrayList;
@@ -101,7 +102,23 @@ public class MySQLDAOImpl implements DAO {
 
     @Override
     public void update(Articulo articulo) {
-        String sql = "update "+this.tableName+" set titulo= , precio= , autor= ";
+        String sql = "UPDATE " + this.tableName + " SET titulo=?, precio=?, autor=? WHERE id=?";
+
+        
+        try (Connection con = AdministradorDeConexiones.getConnection();
+            PreparedStatement statement = con.prepareStatement(sql)) {
+
+        statement.setString(1, articulo.getTitulo());
+        statement.setDouble(2, articulo.getPrecio());
+        statement.setString(3, articulo.getAutor());
+        statement.setLong(4, articulo.getId());
+
+        statement.executeUpdate();
+
+        
+    } catch (SQLException e) {
+        // Manejar la excepción o lanzarla para que sea capturada en un nivel superior
+    }
     }
 
     @Override

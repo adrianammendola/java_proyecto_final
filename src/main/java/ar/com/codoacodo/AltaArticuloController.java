@@ -4,11 +4,6 @@ package ar.com.codoacodo;
 import java.io.IOException;
 import java.time.LocalDateTime;
 
-
-import javax.swing.JOptionPane;
-
-
-
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -38,9 +33,16 @@ String codigo = req.getParameter("codigo");
 // Verificación de campos vacíos
 if (titulo.isEmpty() || precioStr.isEmpty() || autor.isEmpty() || codigo.isEmpty()) {
     String mensaje = "Por favor, complete todos los campos.";
-    req.setAttribute("mensaje", mensaje);
+    req.setAttribute("mensajeDanger", mensaje);
+        
+    req.setAttribute("titulo", titulo);
+    req.setAttribute("precio", precioStr);
+    req.setAttribute("autor", autor);
+    req.setAttribute("codigo", codigo);
+        
     req.getRequestDispatcher("nuevo.jsp").forward(req, resp);
     return;
+    
 }
 
 // Conversión y validación del campo "precio"
@@ -49,7 +51,7 @@ try {
     precio = Double.parseDouble(precioStr);
 } catch (NumberFormatException e) {
     String mensaje = "El valor del campo 'precio' no es válido.";
-    req.setAttribute("mensaje", mensaje);
+    req.setAttribute("mensajeSuccess", mensaje);
     req.getRequestDispatcher("nuevo.jsp").forward(req, resp);
     return;
 }
@@ -64,7 +66,7 @@ try {
     dao.create(nuevo);
 
     String mensaje = "Artículo creado exitosamente.";
-    req.setAttribute("mensaje", mensaje);
+    req.setAttribute("mensajeSuccess", mensaje);
     req.getRequestDispatcher("nuevo.jsp").forward(req, resp);
 
 } catch (Exception e) {
@@ -72,11 +74,6 @@ try {
     // Manejo de excepciones
     // Redireccionar a una página de error, si es necesario
 }
-
-
-
-
-
 
     }
 }

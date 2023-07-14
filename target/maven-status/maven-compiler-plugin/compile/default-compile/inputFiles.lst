@@ -1,11 +1,11 @@
-c:\Users\ammendola\Desktop\java\java_proyecto_final\src\main\java\ar\com\codoacodo\dao\impl\MySQLDAOImpl.java
-c:\Users\ammendola\Desktop\java\java_proyecto_final\src\main\java\ar\com\codoacodo\DeleteController.java
-c:\Users\ammendola\Desktop\java\java_proyecto_final\src\main\java\ar\com\codoacodo\EditarController.java
-c:\Users\ammendola\Desktop\java\java_proyecto_final\src\main\java\ar\com\codoacodo\oop\Libro.java
-c:\Users\ammendola\Desktop\java\java_proyecto_final\src\main\java\ar\com\codoacodo\dao\impl\DAO.java
-c:\Users\ammendola\Desktop\java\java_proyecto_final\src\main\java\ar\com\codoacodo\oop\Musica.java
-c:\Users\ammendola\Desktop\java\java_proyecto_final\src\main\java\ar\com\codoacodo\ListadoArticuloController.java
-c:\Users\ammendola\Desktop\java\java_proyecto_final\src\main\java\ar\com\codoacodo\AltaArticuloController.java
-c:\Users\ammendola\Desktop\java\java_proyecto_final\src\main\java\ar\com\codoacodo\db\AdministradorDeConexiones.java
-c:\Users\ammendola\Desktop\java\java_proyecto_final\src\main\java\ar\com\codoacodo\oop\Pelicula.java
-c:\Users\ammendola\Desktop\java\java_proyecto_final\src\main\java\ar\com\codoacodo\oop\Articulo.java
+/Users/usuario/Desktop/Cursos/Codo a Codo 2023/java_proyecto_final/src/main/java/ar/com/codoacodo/oop/Musica.java
+/Users/usuario/Desktop/Cursos/Codo a Codo 2023/java_proyecto_final/src/main/java/ar/com/codoacodo/ListadoArticuloController.java
+/Users/usuario/Desktop/Cursos/Codo a Codo 2023/java_proyecto_final/src/main/java/ar/com/codoacodo/EditarController.java
+/Users/usuario/Desktop/Cursos/Codo a Codo 2023/java_proyecto_final/src/main/java/ar/com/codoacodo/oop/Pelicula.java
+/Users/usuario/Desktop/Cursos/Codo a Codo 2023/java_proyecto_final/src/main/java/ar/com/codoacodo/oop/Articulo.java
+/Users/usuario/Desktop/Cursos/Codo a Codo 2023/java_proyecto_final/src/main/java/ar/com/codoacodo/oop/Libro.java
+/Users/usuario/Desktop/Cursos/Codo a Codo 2023/java_proyecto_final/src/main/java/ar/com/codoacodo/db/AdministradorDeConexiones.java
+/Users/usuario/Desktop/Cursos/Codo a Codo 2023/java_proyecto_final/src/main/java/ar/com/codoacodo/dao/impl/MySQLDAOImpl.java
+/Users/usuario/Desktop/Cursos/Codo a Codo 2023/java_proyecto_final/src/main/java/ar/com/codoacodo/DeleteController.java
+/Users/usuario/Desktop/Cursos/Codo a Codo 2023/java_proyecto_final/src/main/java/ar/com/codoacodo/dao/impl/DAO.java
+/Users/usuario/Desktop/Cursos/Codo a Codo 2023/java_proyecto_final/src/main/java/ar/com/codoacodo/AltaArticuloController.java

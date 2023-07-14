@@ -8,13 +8,14 @@
     <meta http-equiv="Expires" content="0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Final JAVA 2023</title>
+    <link rel="stylesheet" href="./css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-  
-          <img src="" alt="">
+          
+          <img class="container-images" src="./images/codoacodo.png" alt="imagen-codoacodo">
           
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -37,21 +38,19 @@
             
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-6">
                 <section>
                     <h1>Alta Articulo</h1>
                     <form  method="post" action="<%=request.getContextPath()%>/AltaArticuloController">
-                      
-                      
-                      <div class="mb-3">
+                      <div>
                             <label for="exampleFormControlInput1" 
-                                class="form-label">Nombre</label>
+                                class="form-label">Titulo</label>
                             <input name="nombre" 
                                 type="text" 
                                 class="form-control" 
                                 id="nombre"
-                                
-                                maxlength="50">
+                                maxlength="50"
+                                value="${titulo}">
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlTextarea1" 
@@ -61,7 +60,7 @@
                                 type="number" 
                                 class="form-control" 
                                 id="precio"
-                                >
+                                value="${precio}">
                                 
                         </div>
                         <div class="mb-3">
@@ -82,7 +81,7 @@
                                 class="form-control" 
                                 id="codigo" 
                                 maxlength="7"
-                                >
+                                value="${codigo}">
                         </div>
                         <div class="mb-3">
                             <label for="autor" 
@@ -92,21 +91,22 @@
                                 type="text" 
                                 class="form-control" 
                                 id="autor" 
-                                maxlength="50">
+                                maxlength="50"
+                                value="${autor}">
                         </div>
-                        <% if (request.getAttribute("mensaje") != null) { %>
-                          <div class="alert alert-success" role="alert">
-                              <%= request.getAttribute("mensaje") %>
+                        <% if (request.getAttribute("mensajeDanger") != null) { %>
+                          <div class="alert alert-danger" role="alert">
+                              <%= request.getAttribute("mensajeDanger") %>
                           </div>
                         <% } %>
-                        <%-- Fin del bloque de código JSP --%>
-                                      
-                                        
-                                          <button class="btn btn-primary">
-                                              Dar de alta
-                                          </button>
-                                      </form>
-                                  </section>
+                        <% if (request.getAttribute("mensajeSuccess") != null) { %>
+                          <div class="alert alert-success" role="alert">
+                              <%= request.getAttribute("mensajeSuccess") %>
+                          </div>
+                        <% } %>                
+                            <button class="btn btn-primary">
+                                  Dar de alta
+                            </button>
                               </div>
                           </div>
                       </div>     
