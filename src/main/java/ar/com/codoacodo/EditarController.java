@@ -55,46 +55,21 @@ public class EditarController extends HttpServlet {
     
             // Crear el objeto Articulo actualizado
             Articulo articuloActualizado = new Libro(titulo, codigo, autor, precio, false, isbn, codigo, fechaCreacion);
-            articuloActualizado.setId(articuloExistente.getId()); // Establecer el ID del artículo existente
-    
+            articuloActualizado.setId(articuloExistente.getId()); 
+            
             // Actualizar el artículo en la base de datos
             dao.update(articuloActualizado);
     
             // Redirigir a la página de listado de artículos
             resp.sendRedirect(req.getContextPath() + "/ListadoArticuloController");
         } catch (Exception e) {
-            // Manejar la excepción o lanzarla para que sea capturada en un nivel superior
+            // Manejar la excepción
             e.printStackTrace();
             getServletContext().getRequestDispatcher("/editar.jsp").forward(req, resp);
         }
     }
     
 
-   /* protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        //tendria que tener los parametros del front (<form>)
-        String titulo = req.getParameter("nombre");
-        double precio = Double.parseDouble(req.getParameter("precio"));
-        String autor  = req.getParameter("autor");
-        String codigo  = req.getParameter("codigo");
-        String isbn  = "123465465456";
-        LocalDateTime fechaCreacion = LocalDateTime.now();
-        
-        Articulo nuevo = new Libro(titulo, codigo, autor, precio, false, isbn,codigo,fechaCreacion);
-        
-        //Interface nombre  = new ClaseQueImplementaLaIntarface();
-        DAO dao = new MySQLDAOImpl();
-        
-        //puedo usar lo metodos que tiene DAO, sin saber quien cumple el contrato
-        try {
-            dao.update(nuevo);
-            //redirect
-            //getServletContext().getRequestDispatcher("/ListadoArticuloController").forward(req, resp);//POST ListadoArticuloController
-            resp.sendRedirect(req.getContextPath() + "/ListadoArticuloController");
-        } catch (Exception e) {
-            //redirect
-            getServletContext().getRequestDispatcher("/editar.jsp").forward(req, resp);
-            e.printStackTrace();
-        } //try/catch/finally
-    }*/
+   
     
 }

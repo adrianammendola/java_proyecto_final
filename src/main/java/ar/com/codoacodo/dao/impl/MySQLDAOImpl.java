@@ -117,7 +117,8 @@ public class MySQLDAOImpl implements DAO {
 
         
     } catch (SQLException e) {
-        // Manejar la excepción o lanzarla para que sea capturada en un nivel superior
+        // Manejar la excepción 
+        e.getStackTrace();
     }
     }
 

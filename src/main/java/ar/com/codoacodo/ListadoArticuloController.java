@@ -31,10 +31,10 @@ public class ListadoArticuloController extends HttpServlet {
             req.setAttribute("listado", listado); //idem localStorage
         } catch (Exception e) {
             var listado = new ArrayList<>();
-            req.setAttribute("listado", listado); //idem localStorage
+            req.setAttribute("listado", listado);
 
             //error
-            req.setAttribute("error", true);
+            req.setAttribute("error", e.getStackTrace());
         } //try/catch/finally
 
         //redirect
