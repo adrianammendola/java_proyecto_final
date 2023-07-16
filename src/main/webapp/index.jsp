@@ -19,7 +19,7 @@
         <div class="row">
             <div class="col-12">
                 <section>
-                    <h1 class="mt-3 ">Proyecto Final de JAVA 2023</h1>                    
+                    <h1 class="mt-3 " style="margin-top: 2em !important;">Proyecto Final de JAVA 2023</h1>                    
                 </section>
             </div>
         </div>

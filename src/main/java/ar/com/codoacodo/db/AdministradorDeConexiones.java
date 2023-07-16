@@ -19,7 +19,7 @@ public class AdministradorDeConexiones {
 		String driverClassName = "com.mysql.cj.jdbc.Driver";
 		
 		//nombre de la base de datos
-		String dbName = "23049-db";
+		String dbName = "proyecto_final_java";
 		
 		
 		Connection connection;

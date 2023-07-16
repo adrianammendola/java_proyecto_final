@@ -101,6 +101,45 @@ public class MySQLDAOImpl implements DAO {
     }
 
     @Override
+    public ArrayList<Articulo> findAllByTitle(String clave) throws Exception {
+
+        String sql = "select * from "+this.tableName+ " where UPPER(titulo) like '%"+clave.toUpperCase()+"%'";
+
+        return findBySQL(sql);
+    }
+
+    private ArrayList<Articulo> findBySQL(String sql) throws SQLException {
+        //Obtener la Conection
+        Connection con = AdministradorDeConexiones.getConnection();
+
+        //PreparedStatement con mi sql
+        PreparedStatement pst = con.prepareStatement(sql);
+
+        ArrayList<Articulo> listado = new ArrayList<>();
+
+        ResultSet res = pst.executeQuery();
+
+        while(res.next()) {
+            Long id = res.getLong(1);
+            String titulo = res.getString(2);
+            String imagen = res.getString(3);
+            String autor = res.getString(4);
+            Long novedad = res.getLong(5);
+            Date fechaCreacion = res.getDate(6);
+            String codigo = res.getString(7);
+            Double precio = res.getDouble(8);
+
+            boolean esNovedad = novedad.equals(1L);//long
+            //TODO:
+            //LocalDateTime ldt = LocalDateTime.ofInstant(fechaCreacion.toInstant(),ZoneId.systemDefault());
+
+            listado.add(new Articulo(id, titulo, imagen, autor, precio, esNovedad, codigo, LocalDateTime.now()));
+        }
+        return listado;
+    }
+
+
+    @Override
     public void update(Articulo articulo) {
         String sql = "UPDATE " + this.tableName + " SET titulo=?, precio=?, autor=? WHERE id=?";
 

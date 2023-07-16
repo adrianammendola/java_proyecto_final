@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary" style="position: absolute;">
     <div class="container-fluid">
      
         <img class="container-images" src="./images/codoacodo.png" alt="imagen-codoacodo">

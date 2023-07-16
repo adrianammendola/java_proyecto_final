@@ -9,9 +9,10 @@ import ar.com.codoacodo.oop.Articulo;
 public interface DAO {
  
     //el que debe hacer el que quiera usar el contrato DAO
-    public Articulo getById(Long id) throws Exception;//LA PK DE LA TABLA
-    public void delete(Long id) throws Exception;//LA PK DE LA TABLA
+    public Articulo getById(Long id) throws Exception;
+    public void delete(Long id) throws Exception;
     public ArrayList<Articulo> findAll() throws Exception;
-    public void update(Articulo articulo) throws Exception;//TIENE ID
-    public void create(Articulo articulo) throws Exception;//NO TIENE ID
+    public void update(Articulo articulo) throws Exception;
+    public void create(Articulo articulo) throws Exception;
+    public ArrayList<Articulo> findAllByTitle(String clave) throws Exception;
 }

@@ -23,7 +23,7 @@
         <div class="row">
             <div class="col-6">
                 <section>
-                    <h1>Editar Articulo id=<%= (producto != null) ? producto.getId() : "" %></h1>
+                    <h1 style="margin-top: 2em;">Editar Articulo id=<%= (producto != null) ? producto.getId() : "" %></h1>
                     <form method="post" action="<%=request.getContextPath()%>/EditarController?id=<%=((ar.com.codoacodo.oop.Articulo)request.getAttribute("producto")).getId()%>">
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" 

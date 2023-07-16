@@ -19,7 +19,7 @@
         <div class="row">
             <div class="col-6">
                 <section>
-                    <h1>Alta Articulo</h1>
+                    <h1 style="margin-top: 0.5em;">Alta Articulo</h1>
                     <form  method="post" action="<%=request.getContextPath()%>/AltaArticuloController">
                       <div>
                             <label for="exampleFormControlInput1" 
